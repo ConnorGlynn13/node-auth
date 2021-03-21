@@ -8,6 +8,6 @@ exports.seed = function(knex) {
         {email: 'admin', password: 'admin'},
         {email: 'test', password: 'test'},
         {email: 'connor', password: 'connor'},
-      ]);
-    });
-};
+      ])
+    })
+}

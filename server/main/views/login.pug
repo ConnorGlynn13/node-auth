@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Login
+  p please sign in below
+  p(style="color:red") #{error}
+  form(method="POST")
+    label(for="email") Email
+    input(type="text", value=email, name="email", id="email" data-qa="email")
+    label(for="password") Password
+    input(type="password", value=password, name="password", id="password" data-qa="password")
+    button(type="submit", id="submit" data-qa="submit") Submit
+
+  a(href="/register") or register here

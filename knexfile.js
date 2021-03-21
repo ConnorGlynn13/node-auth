@@ -1,5 +1,3 @@
-// Update with your config settings.
-
 module.exports = {
 
   development: {
@@ -14,10 +12,11 @@ module.exports = {
       max: 10
     },
     migrations: {
+      directory: __dirname + '/database/migrations',
       tableName: 'knex_migrations'
     },
     seeds: {
-      directory: './seeds'
+      directory: __dirname + '/database/seeds'
     }
   },
 
@@ -33,6 +32,7 @@ module.exports = {
       max: 10
     },
     migrations: {
+      directory: __dirname + '/database/migrations',
       tableName: 'knex_migrations'
     }
   },
@@ -49,8 +49,9 @@ module.exports = {
       max: 10
     },
     migrations: {
+      directory: __dirname + '/database/migrations',
       tableName: 'knex_migrations'
     }
   }
 
-};
+}
